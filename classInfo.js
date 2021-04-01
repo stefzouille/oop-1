@@ -42,12 +42,12 @@ const charlie = new human('Charlie', 'Charlot', 8, ['chinorussfrancokainrijapbel
 
 
 //console.log(alice.firstName)
-// alice.printInfo()
-// alice.canVote()
-// alice.mostSkilledDev(charlie)
-// bob.printInfo()
-// bob.canVote()
-// bob.mostSkilledDev(charlie)
+alice.printInfo()
+alice.canVote()
+alice.mostSkilledDev(charlie)
+bob.printInfo()
+bob.canVote()
+bob.mostSkilledDev(charlie)
 charlie.printInfo()
 charlie.canVote()
 charlie.mostSkilledDev(bob)
