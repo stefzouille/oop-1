@@ -15,9 +15,9 @@
 // age: 8
 
 
-//creation de l objet literal alice - bob - charlie
+//creation de l objet literal alice - bob - charlie qui sont des variables
 const alice = {
-  firstname : 'Alice',
+  firstname : 'Alice',    //le reste sont des propriétées avec leur key
   lastName : 'Liddell',
   age: 28,
   language: ['martien', 'bielo ruze', 'cweole blockchain']
@@ -36,6 +36,7 @@ const charlie = {
 }
 
 //fct avec parametre qui prend un odjet tips et et affiche les info
+//Les objets peuvent être des paramètres de fonctions:
 const printInfo = (tips) => {
   return (`info de :\n ${tips.firstname}\n ${tips.lastName}\n ${tips.age}\n${tips.language}`)
 }
@@ -57,6 +58,7 @@ console.log(canVote(alice))
 console.log(canVote(bob))
 console.log(canVote(charlie))
 
+//fct verif de la personne ki connais le plus de langue passé au tab de language
 const mostSkilledDev = (lang1, lang2) => {
   if (lang1.language.length > lang2.language.length) {
     return `${lang1.firstname} know mucho`
@@ -66,4 +68,5 @@ const mostSkilledDev = (lang1, lang2) => {
     return 'draw'
   }
 }
+//appel de la fct et 2 parametre pour les comparer
 console.log(mostSkilledDev(bob, alice ))

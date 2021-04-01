@@ -3,27 +3,30 @@
 // https://fr.wikipedia.org/wiki/Distance_entre_deux_points_sur_le_plan_cart%C3%A9sien
 // Pour calculer la racine carrée d'un nombre on utilise directement la méthode Math.sqrt:
 // Définit d'une classe Point
+// declaration de la class et de ses objet en parametre x,y
 class Point {
   constructor(x, y) {
     this.x = x
     this.y = y
   }
+
+  //affiche les parametres passé a l'objet
   show() {
     console.log(`(${this.x}, ${this.y})`)
   }
+
+  //verif si les parametres sont egal en valeur
   isEqual(point) {
     console.log(this.x === point.x && this.y === point.y ? true : false)
   }
-  distance() {
-
-  }
+  //bon le calcule distance ramene a une formule    !(a+ b)² = a² + 2ab + b²          (a - b)² = a² - 2ab -b²
+  
+  distance(dt) {
+      console.log(Math.sqrt((Math.pow((dt.x - this.x),2)) + (Math.pow((dt.y - this.y),2))))
+  }//        
 }
-// p1 est une instance de Point
-const p1 = new Point(1, 2)
-// p2 est une autre instance de Point
-const p2 = new Point(10, 11)
 
-p1.isEqual(p2)
-p1.show()
-p2.show()
+
+// Point = tete 
+exports.Point = Point
 
