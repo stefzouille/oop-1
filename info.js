@@ -52,18 +52,19 @@ const canVote = (printInfo) => {
   } else {
     return 'false'
   }
-}
-//appel de la fct canvote et affiche les info demandé
+}  //mode ternary plus cour : return person.age > 18 ? true : false
+
+//appel de la methode:fct? canvote et affiche les info demandé
 console.log(canVote(alice))
 console.log(canVote(bob))
 console.log(canVote(charlie))
 
-//fct verif de la personne ki connais le plus de langue passé au tab de language
+//fct de methode? verif de la personne ki connais le plus de langue passé au tab de language
 const mostSkilledDev = (lang1, lang2) => {
   if (lang1.language.length > lang2.language.length) {
     return `${lang1.firstname} know mucho`
   } else if (lang1.language.length < lang2.language.length) {
-    return `${lang2.firstname} know mucho`
+    return `${lang2.firstname} know mucho mucho`
   } else {
     return 'draw'
   }

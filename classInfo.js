@@ -39,13 +39,13 @@ class human {
   mostSkilledDev(prs) {
     if (this.language.length > prs.language.length) {
       console.log(`${this.firstName} know mucho`)
-   } else if (prs.language.length < this.language.length) {
+   } else if (this.language.length < prs.language.length) {
      console.log(`${this.firstName} know mucho mucho`)
     }  else {
       console.log('draw')
     }
   } 
-  //mostSkilledDev(bob, alice )
+
 } 
 
 //permet l eport du fichier d etre appeler par un main.js par exemple
